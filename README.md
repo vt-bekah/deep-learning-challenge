@@ -109,6 +109,10 @@ The next level of investigation for optimization: bin the amount asked into rang
 # Repo Notes
 
 ## File Notes
+*.ipynb files contain the code to prepare data, create a model, train a model, evaluate the model, save teh model<br>
+*_fit.h5 files contain the fit model details for every 5 epochs<br>
+*_model.h5 files contain the model 
+
 * AlphabetSoupCharity.* contains the solution as mapped out in Part 1 & Part 2 of the challenge instructions.
 * funding_ventures_experiment.ipynb shows where I was experimenting to identify optimal activation function and impactful data.
 * AlphabetSoupCharity_Optimization1.* contains the first level of optimization efforts to improve accuracy through brute force with maximum data for one application type.
