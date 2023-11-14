@@ -102,7 +102,10 @@ High Data, High Processing | Reduced Data, High Processing | Reduced Data, Low P
 
 In general, I do not recommend using any of these models to determine whether a venture is going to be successful as a 75% success rate for a high $ investment could quickly result in losing large amounts of money. For smaller investments, these types of models could make sense where the risk of failure is less impactful. 
 
-The next level of investigation for optimization: bin the amount asked into ranges and see if models are more accurate if the potential ventures are grouped accordingly. i.e. Would a model be more accurate if the data set was limited to an asking amount rather than application type or in addition to application type?
+**recommendation for how a different model could solve this classification problem, and then explain your recommendation**<br>
+Original Text: The next level of investigation for optimization: bin the amount asked into ranges and see if models are more accurate if the potential ventures are grouped accordingly. i.e. Would a model be more accurate if the data set was limited to an asking amount rather than application type or in addition to application type?
+
+Clarification: I would bin the "Ask Amount", focusing on a single bin. This would mean filtering the data to be only that bin and remove that column. Then use keras tuner to identify whether relu, tanh, etc would be best. Then experiment with different neurons and layers to see if accuracy can be improved. The idea being that reducing this feature to one could improve model capability.
 
 # 
 #
